@@ -15,7 +15,7 @@ window.onload = () => {
 
 // access each class using forEach
 button_input.forEach((button_class) => {
-	button_class.addEventListener('click', () => {
+	button_class.addEventListener('click', (e) => {
 		if (equal_pressed == 1) {
 			input.value = "";
 			equal_pressed = 0;
